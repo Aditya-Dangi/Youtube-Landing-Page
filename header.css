@@ -1,0 +1,232 @@
+.heading
+{
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 15px;
+  right: 15px;
+  height: 50px;
+  background-color: white;
+  border-bottom-color: pink;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  z-index: 2;
+}
+.left
+{
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+}
+.center
+{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right
+{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+.noti1
+{
+  position: relative;
+}
+.noti2
+{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  height: 22px;
+  width: 22px;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.hamburger-menu
+{
+  width: 30px;
+  cursor: pointer;
+  padding-top: 3px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ytlogo
+{
+  cursor: pointer;
+  height: 40px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-left: 0px;
+}
+.ytlogodiv
+{
+  position: relative;
+}
+.ytlogodiv .ytlogotext 
+{
+  position: absolute;
+  right: 0px;
+  bottom: -15px;
+  background-color: rgb(224, 224, 224);
+  border-style: solid;
+  border-width: .1px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .25s;
+}
+.ytlogodiv:hover .ytlogotext
+{
+  opacity: 1;
+}
+.search
+{
+  height: 30px;
+  width: 80%;
+  min-width: 50px;
+  border-radius: 18px;
+  border-style: solid;
+  border-color: black;
+  border-width: .1px;
+  border-color: lightpink;
+  padding-left: 10px;
+  font-size: 14px;
+  outline: none;
+}
+.search::placeholder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+}
+
+.ytsearchbutton 
+{
+  height: 34px;
+  margin-left: -20px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-width: .1px;
+  border-style: solid;
+  border-color: lightpink;
+  cursor: pointer;
+  position: relative;
+}
+.ytsearchbutton .searchtextwhenhover
+{
+  position: absolute;
+  background-color: rgb(236, 234, 234);
+  border-style: solid;
+  border-width: .1px;
+  width: 90%;
+  font-size: 12px;
+  border-radius: 2px;
+  left: 0;
+  bottom: -20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all.25s;
+}
+.ytsearchbutton:hover .searchtextwhenhover
+{
+  opacity: 1;
+}
+.ytsearchicon
+{
+  height: 100%;
+  cursor: pointer;
+}
+.ytvoicesearchdiv
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.ytvoicesearchdiv .ytvoicesearchtext
+{
+  position: absolute;
+  bottom: -25px;
+  background-color: rgb(228, 228, 228);
+  border-style: solid;
+  border-width: .1px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all .25s;
+  pointer-events: none;
+  font-size: 12px;
+}
+.ytvoicesearchdiv:hover .ytvoicesearchtext
+{
+  opacity: 1;
+}
+.ytvoicesearchbutton
+{
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  vertical-align: middle;
+  cursor: pointer;
+  border-width: 1px;
+  border-color: lightpink;
+  border-style: solid;
+}
+.ytvoicesearchbutton:hover
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: .7;
+}
+.right img
+{
+  width: 30px;
+  cursor: pointer;
+}
+.useridicon
+{
+  border-radius: 18px;
+}
+.righticondiv, .hamburgericondiv
+{
+  position: relative;
+}
+.righticondiv .uploadrighticondivtext,
+.hamburgericondiv .hamburgericondivtext
+{
+  position: absolute;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  left: 20px;
+  bottom: -15px;
+  opacity: 0;
+  pointer-events: none;
+}
+.buttoniconforrightheader, 
+.hamburgericondivbutton
+{
+  padding: 0;
+}
+.righticondiv:hover .uploadrighticondivtext,
+.hamburgericondiv:hover .hamburgericondivtext
+{
+  opacity: 1;
+}
